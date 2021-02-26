@@ -1,0 +1,12 @@
+import Text.Parsec
+parseTest parser "A=B"
+parseTest parser "A=B;"
+parseTest parser "A=B;\nB=C;"
+parseTest parser "A=B;\n"
+parseTest parser "\nA=B;\nB=C;"
+parseTest parser "\nA=B;\n\nB=C;"
+parseTest parser "A=B;B=C;"
+parseTest parser "  A = eye ( 10 ) ; "
+parseTest parser "  B = zeros (105,8) ; "
+parseTest parser "  B = zeros (-105,  8) ; "
+parseTest parser "  B = zeros (105,  8.0) ; "
