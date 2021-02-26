@@ -35,6 +35,8 @@ executables:
     - -threaded
     - -rtsopts
     - -with-rtsopts=-N
+    dependencies:
+    - Matlab2Petsc
 
 tests:
   Project-test:
@@ -45,4 +47,4 @@ tests:
     - -rtsopts
     - -with-rtsopts=-N
     dependencies:
-    - Project
+    - Matlab2Petsc
